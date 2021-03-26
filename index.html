@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="main.css">
     <title>Kalakari</title>
 </head>
+
 <body>
     <header role="banner">
 
@@ -20,106 +22,195 @@
             <nav class="sidebar-nav">
                 <h2>Components</h2>
                 <div id="menu">
-                    <a class="menu-list active"
-                    href="#song1">Alert</a>
-                    <a class="menu-list"
-                    href="#">Avatar</a>
-                    <a class="menu-list"
-                    href="#">Box</a>
-                    <a class="menu-list"
-                    href="#">Link</a>
-                    <a class="menu-list"
-                    href="#">Image</a>
-                    <a class="menu-list"
-                    href="#">Card</a>
-                    <a class="menu-list"
-                    href="#">Alert</a>
-                    <a class="menu-list"
-                    href="#">Avatar</a>
-                    <a class="menu-list"
-                    href="#">Box</a>
-                    <a class="menu-list"
-                    href="#">Link</a>
-                    <a class="menu-list"
-                    href="#">Image</a>
-                    <a class="menu-list"
-                    href="#">Card</a>
+                    <a class="menu-list active" href="#avatar">Avatar</a>
+                    <a class="menu-list" href="#alert">Alert</a>
+                    <a class="menu-list" href="#badge">Badge</a>
+                    <a class="menu-list" href="#button">Button</a>
+                    <a class="menu-list" href="#card">Card</a>
+                    <a class="menu-list" href="#image">Image</a>
+                    <a class="menu-list" href="#input">Input</a>
+                    <a class="menu-list" href="#lists">Lists</a>
+                    <a class="menu-list" href="#nav">Navigation</a>
+                    <a class="menu-list" href="#modal">Modal</a>
+                    <a class="menu-list" href="#rating">Rating</a>
+                    <a class="menu-list" href="#typography">Typography</a>
+                    <a class="menu-list" href="#toast">Toast</a>
                 </div>
             </nav>
 
             <div class="main-content">
                 <div class="content-container">
+
                     <h1>Getting Started</h1>
 
-                    <h2 id="installation" class="sub-heading-style">
-                        <span>Installation</span>
-                        <a href="#installation">#</a>
-                    </h2>
-
+                    <h2 class="sub-heading-style">Installation</h2>
                     <div class="code-block-style">
-                        <iframe
-                        src="https://carbon.now.sh/embed/kx4n3HiTreK33YHwPpn8"
-                        style="width: 462px; height: 204px; border:0; transform: scale(1); overflow:hidden;"
-                        sandbox="allow-scripts allow-same-origin">
+                        <iframe 
+                            src="https://carbon.now.sh/embed/M9Q11P8Cmj9Q5rWoSlm4"
+                            style="border:0; transform: scale(1); overflow:hidden;"
+                            sandbox="allow-scripts allow-same-origin">
                         </iframe>
                     </div>
 
-                    <div class="alert" role="alert">
-                        <!-- These are some sample alerts!
-                        <p class="alert alert-warning">
-                            This is a warning alert!
-                        </p>
-                        <p class="alert alert-info">
-                            This is a info alert!
-                        </p>
-                        <p class="alert alert-failed">
-                            This is a failed alert!
-                        </p> -->
-                        <p id="song1">
-                            <h1>At My Worst</h1>
-                            <strong>Pink Sweats </strong><br>
-                            Can I call you baby? <br>
-                            Can you be my friend? <br>
-                            Can you be my lover up until the very end? <br>
-                            Let me show you love, oh, I don't pretend <br>
-                            Stick by my side even when the world is givin' in, yeah <br>
-                            Oh, oh, oh, don't <br>
-                            Don't you worry <br>
-                            I'll be there, whenever you want me <br>
-                            I need somebody who can love me at my worst <br>
-                            No, I'm not perfect, but I hope you see my worth <br>
-                            'Cause it's only you, nobody new, I put you first <br>
-                            And for you, girl, I swear I'll do the worst <br>
-                            If you stay forever, let me hold your hand <br>
-                            I can fill those places in your heart no else can <br>
-                            Let me show you love, oh, I don't pretend, yeah <br>
-                            I'll be right here, baby, you know I'll sink or swim <br>
-                            Oh, oh, oh, don't <br>
-                            Don't you worry <br>
-                            I'll be there, whenever you want me <br>
-                            I need somebody who can love me at my worst <br>
-                            No, I'm not perfect, but I hope you see my worth, yeah <br>
-                            'Cause it's only you, nobody new, I put you first (put you first) <br>
-                            And for you, girl, I swear I'll do the worst <br>
-                            I need somebody who can love me at my worst <br>
-                            No, I'm not perfect, but I hope you see my worth <br>
-                            'Cause it's only you, nobody new, I put you first <br>
-                            And for you, girl, I swear I'll do the worst
-                        </p>
+                    <!-- there is issue at usage the header hides after this, need to fix it -->
+                    <h1 id="avatar" class="offset-issue">Avatar</h1>
+                    <p>The Avatar component is used to represent a <i>user</i>, and displays the <i>profile picture</i>, <i>initials</i> or <i>fallback icon</i>.</p>
+                    <h2 class="sub-heading-style">Usage</h2>
+
+                    <div class="row">
+                        <img src="./images/avatars/naruto-kids/naruto.png" alt="kid naruto">
+                        <img src="./images/avatars/naruto-kids/sakura.png" alt="kid sakura">
+                        <img src="./images/avatars/naruto-kids/sasuke.png" alt="kid sasuke">
+                        <img src="./images/avatars/naruto-kids/kakashi.png" alt="kakashi">
+                        <img src="./images/avatars/batman.png" alt="batman">
+                        <img src="./images/avatars/deadpool.png" alt="deadpool">
                     </div>
+                    <div class="code-block-style">
+                        <iframe
+                            src="https://carbon.now.sh/embed/dJUgPcaAYk4sPGiAMWDa"
+                            style="border:0; transform: scale(1); overflow:hidden;" sandbox="allow-scripts allow-same-origin">
+                        </iframe>
+                    </div>
+
+                    <h3 class="sub-heading-style">Avatar sizes</h3>
+                    <p>Avatar sizes can be modified by setting the width and height property of images.
+                    </p>
+
+                    <div class="row">
+                        <img id="resizeAvatar1" src="./images/avatars/naruto-kids/naruto.png" alt="kid naruto">
+                        <img id="resizeAvatar2" src="./images/avatars/naruto-kids/sakura.png" alt="kid sakura">
+                        <img id="resizeAvatar3" src="./images/avatars/naruto-kids/sasuke.png" alt="kid sasuke">
+                        <img id="resizeAvatar4" src="./images/avatars/naruto-kids/kakashi.png" alt="kakashi">
+                        <img id="resizeAvatar5" src="./images/avatars/batman.png" alt="batman">
+                        <img id="resizeAvatar6" src="./images/avatars/deadpool.png" alt="deadpool">
+                    </div>
+                    <div class="code-block-style">
+                        <iframe
+                            src="https://carbon.now.sh/embed/fgYSSHA8Hb0hatltpSG0"
+                            style="border:0; transform: scale(1); overflow:hidden;"
+                            sandbox="allow-scripts allow-same-origin">
+                        </iframe>
+                    </div>
+
+                    <h3 class="sub-heading-style">Avatar Fallback</h3>
+                    <p>If there is an error loading the src of the avatar, these fallback avatar can be used:
+                    </p>
+
+                    <div class="row">
+                        <div class="avatar-fb">SM</div>
+                        <div class="avatar-fb">RS</div>
+                        <div class="avatar-fb">HS</div>
+                        <img src="./images/avatars/fallback-avatars/man.png" alt="man">
+                        <img src="./images/avatars/fallback-avatars/woman.png" alt="woman">
+                        <img src="./images/avatars/fallback-avatars/user.png" alt="user">
+                    </div>
+                    <div class="code-block-style">
+                        <iframe
+                            src="https://carbon.now.sh/embed/LrYz9ggrzfc5MunBWLks"
+                            style="width: 748px; height: 250px; border:0; transform: scale(1); overflow:hidden;"
+                            sandbox="allow-scripts allow-same-origin">
+                        </iframe>
+                    </div>
+
+                    <h1 id="alert" class="offset-issue">Alert</h1>
+                    <p>Alerts are used to communicate a state that affects a system, feature or page.
+                    </p>
+
+                    <h2 class="sub-heading-style">Usage</h2>
+
+                    <div class="row">
+                        <div class="alert alert-success">
+                            <img src="./images/symbols/success.svg" alt="">
+                            Success! Your data has been submitted successfully
+                        </div>
+                        <div class="alert alert-warning">
+                            <img src="./images/symbols/warning.svg" alt="">
+                            Warning! Your have not saved your data
+                        </div>
+                        <div class="alert alert-error">
+                            <img src="./images/symbols/error.svg" alt="">
+                            Error! We failed to save your data
+                        </div>
+                        <div class="alert alert-info">
+                            <img src="./images/symbols/info.svg" alt="">
+                            Info! Please save your data before submission
+                        </div>
+                    </div>
+                    <div class="code-block-style">
+                        <iframe
+                            src="https://carbon.now.sh/embed/9x7whaG78KhhSvV6BUqO"
+                            style="width: 1024px; height: 456px; border:0; transform: scale(1); overflow:hidden;"
+                            sandbox="allow-scripts allow-same-origin">
+                        </iframe>
+                    </div>
+
+                    <h1 id="badge" class="offset-issue">Badge</h1>
+                    <p>Badges are used to highlight an item's status for quick recognition.
+                    </p>
+
+                    <h2 class="sub-heading-style">Usage</h2>
+
+                    <div class="row">
+                        <span class="badge badge-default">DEFAULT</span>
+                        <span class="badge badge-success">SUCCESS</span>
+                        <span class="badge badge-removed">REMOVED</span>
+                        <span class="badge badge-new">NEW</span>
+                        <span class="badge badge-value">7</span>
+                    </div>
+                    <div class="code-block-style">
+                        <iframe
+                            src="https://carbon.now.sh/embed/QFb7A9HOE6XMsE1MtVH0"
+                            style="width: 757px; height: 312px; border:0; transform: scale(1); overflow:hidden;"
+                            sandbox="allow-scripts allow-same-origin">
+                        </iframe>
+                    </div>
+
+                    <h1 id="button" class="offset-issue">Button</h1>
+                    <p>The Button component is used to trigger an action or event, such as submitting a form, opening a dialog, canceling an action, or performing a delete operation.
+                    </p>
+
+                    <h2 class="sub-heading-style">Usage</h2>
+                    <div class="row">
+                        <button class="btn btn-nrml"> Button </button>
+                    </div>
+
+                    <h3 class="sub-heading-style"> Button sizes </h3>
+                    <div class="row">
+                        <button class="btn btn-sm"> Button </button>
+                        <button class="btn btn-md"> Button </button>
+                        <button class="btn btn-lg"> Button </button>
+                        <button class="btn btn-xl"> Button </button>
+                    </div>
+
+                    <h3 class="sub-heading-style">Button Variant</h3>
+                    <div class="row">
+                        <button class="btn btn-primary">Primary</button>
+                        <button class="btn button-secondary">Secondary</button>
+                        <button class="btn btn-disabled">Disabled</button>
+                        <button class="btn btn-fb">Facebook</button>
+                        <button class="btn btn-icon-twitter">Twitter</button>
+                    </div>
+                    <div class="code-block-style">
+                    </div>
+
                 </div>
                 <div class="footer">
                     <footer>
-                        <p> Proudly made in <img src="./images/india-flag.png" alt="footer-logo"> by Shashank Shekhar Mishra</p>
+                        <p> Proudly made in <img src="./images/india-flag.png" alt="footer-logo"> by Shashank Shekhar
+                            Mishra</p>
 
                         <div>
-                            <a href="https://twitter.com/Shashankm597"><img alt=" Twitter" width="22px" src="./images/twitter.svg" /></a>
+                            <a href="https://twitter.com/Shashankm597"><img alt="Twitter" width="22px"
+                                    src="./images/socials/twitter.svg" /></a>
 
-                            <a href="https://www.linkedin.com/in/shashank-shekhar-mishra-259a05148/"><img alt="LinkedIn" width="22px" src="./images/linkedin.svg" /></a>
+                            <a href="https://www.linkedin.com/in/shashank-shekhar-mishra-259a05148/"><img alt="LinkedIn"
+                                    width="22px" src="./images/socials/linkedin.svg" /></a>
 
-                            <a href="https://github.com/Shshankm597"><img alt="Github" width="22px" src="./images/github.svg" /></a>
+                            <a href="https://github.com/Shshankm597"><img alt="Github" width="22px"
+                                    src="./images/socials/github.svg" /></a>
 
-                            <a href="mailto:shshankm597@gmail.com"><img alt="Gmail" width="22px" src="./images/gmail.svg" /></a>
+                            <a href="mailto:shshankm597@gmail.com"><img alt="Gmail" width="22px"
+                                    src="./images/socials/gmail.svg" /></a>
                         </div>
 
                     </footer>
@@ -132,4 +223,5 @@
     </main>
     <script src="./script.js"></script>
 </body>
+
 </html>
