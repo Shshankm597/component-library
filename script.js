@@ -1,4 +1,5 @@
-// // Add active class to the sidebar list (highlight it)
+
+// Add active class to the sidebar list (highlight it)
 
 var header = document.getElementById("menu");
 var btns = header.getElementsByClassName("menu-list");
