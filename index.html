@@ -12,7 +12,12 @@
 <body>
     <header role="banner">
 
-        <h1>UI</h1>
+        <span class="logo-title">
+            <img class="logo-img" src="./images/kalakari-logo.png" alt="Kalakari Logo"> <h1>alakari</h1>
+        </span>
+
+        <a href="http://"><img src="./images/socials/github.svg" alt="">
+        </a>
 
     </header>
 
@@ -29,19 +34,21 @@
                     <a class="menu-list" href="#card">Card</a>
                     <a class="menu-list" href="#image">Image</a>
                     <a class="menu-list" href="#input">Input</a>
-                    <a class="menu-list" href="#lists">Lists</a>
+                    <a class="menu-list" href="#list">List</a>
                     <a class="menu-list" href="#nav">Navigation</a>
+                    <!-- yet to be added
                     <a class="menu-list" href="#modal">Modal</a>
-                    <a class="menu-list" href="#rating">Rating</a>
+                    <a class="menu-list" href="#rating">Rating</a> -->
                     <a class="menu-list" href="#typography">Typography</a>
-                    <a class="menu-list" href="#toast">Toast</a>
+                    <!-- yet to be added
+                    <a class="menu-list" href="#toast">Toast</a> -->
                 </div>
             </nav>
 
             <div class="main-content">
                 <div class="content-container">
 
-                    <h1>Getting Started</h1>
+                    <h1 id="page-top" class="offset-issue">Getting Started</h1>
 
                     <h2 class="sub-heading-style">Installation</h2>
                     <div class="code-block-style">
@@ -52,18 +59,19 @@
                         </iframe>
                     </div>
 
-                    <!-- there is issue at usage the header hides after this, need to fix it -->
+                    <!-- Avatar component -->
+
                     <h1 id="avatar" class="offset-issue">Avatar</h1>
                     <p>The Avatar component is used to represent a <i>user</i>, and displays the <i>profile picture</i>, <i>initials</i> or <i>fallback icon</i>.</p>
                     <h2 class="sub-heading-style">Usage</h2>
 
                     <div class="row">
-                        <img src="./images/avatars/naruto-kids/naruto.png" alt="kid naruto">
-                        <img src="./images/avatars/naruto-kids/sakura.png" alt="kid sakura">
-                        <img src="./images/avatars/naruto-kids/sasuke.png" alt="kid sasuke">
-                        <img src="./images/avatars/naruto-kids/kakashi.png" alt="kakashi">
-                        <img src="./images/avatars/batman.png" alt="batman">
-                        <img src="./images/avatars/deadpool.png" alt="deadpool">
+                        <img class="circular-avatar" src="./images/avatars/naruto-kids/naruto.png" alt="kid naruto">
+                        <img class="circular-avatar" src="./images/avatars/naruto-kids/sakura.png" alt="kid sakura">
+                        <img class="circular-avatar" src="./images/avatars/naruto-kids/sasuke.png" alt="kid sasuke">
+                        <img class="circular-avatar" src="./images/avatars/naruto-kids/kakashi.png" alt="kakashi">
+                        <img class="circular-avatar" src="./images/avatars/batman.png" alt="batman">
+                        <img class="circular-avatar" src="./images/avatars/deadpool.png" alt="deadpool">
                     </div>
                     <div class="code-block-style">
                         <iframe
@@ -100,17 +108,19 @@
                         <div class="avatar-fb">SM</div>
                         <div class="avatar-fb">RS</div>
                         <div class="avatar-fb">HS</div>
-                        <img src="./images/avatars/fallback-avatars/man.png" alt="man">
-                        <img src="./images/avatars/fallback-avatars/woman.png" alt="woman">
-                        <img src="./images/avatars/fallback-avatars/user.png" alt="user">
+                        <img class="circular-avatar" src="./images/avatars/fallback-avatars/man.png" alt="man">
+                        <img class="circular-avatar" src="./images/avatars/fallback-avatars/woman.png" alt="woman">
+                        <img class="circular-avatar" src="./images/avatars/fallback-avatars/user.png" alt="user">
                     </div>
                     <div class="code-block-style">
                         <iframe
                             src="https://carbon.now.sh/embed/LrYz9ggrzfc5MunBWLks"
-                            style="width: 748px; height: 250px; border:0; transform: scale(1); overflow:hidden;"
+                            style="border:0; transform: scale(1); overflow:hidden;"
                             sandbox="allow-scripts allow-same-origin">
                         </iframe>
                     </div>
+
+                    <!-- Alert component -->
 
                     <h1 id="alert" class="offset-issue">Alert</h1>
                     <p>Alerts are used to communicate a state that affects a system, feature or page.
@@ -139,10 +149,12 @@
                     <div class="code-block-style">
                         <iframe
                             src="https://carbon.now.sh/embed/9x7whaG78KhhSvV6BUqO"
-                            style="width: 1024px; height: 456px; border:0; transform: scale(1); overflow:hidden;"
+                            style="border:0; transform: scale(1); overflow:hidden;"
                             sandbox="allow-scripts allow-same-origin">
                         </iframe>
                     </div>
+
+                    <!-- Badge component -->
 
                     <h1 id="badge" class="offset-issue">Badge</h1>
                     <p>Badges are used to highlight an item's status for quick recognition.
@@ -160,10 +172,12 @@
                     <div class="code-block-style">
                         <iframe
                             src="https://carbon.now.sh/embed/QFb7A9HOE6XMsE1MtVH0"
-                            style="width: 757px; height: 312px; border:0; transform: scale(1); overflow:hidden;"
+                            style="border:0; transform: scale(1); overflow:hidden;"
                             sandbox="allow-scripts allow-same-origin">
                         </iframe>
                     </div>
+
+                    <!-- Button component -->
 
                     <h1 id="button" class="offset-issue">Button</h1>
                     <p>The Button component is used to trigger an action or event, such as submitting a form, opening a dialog, canceling an action, or performing a delete operation.
@@ -173,25 +187,335 @@
                     <div class="row">
                         <button class="btn btn-nrml"> Button </button>
                     </div>
-
-                    <h3 class="sub-heading-style"> Button sizes </h3>
-                    <div class="row">
-                        <button class="btn btn-sm"> Button </button>
-                        <button class="btn btn-md"> Button </button>
-                        <button class="btn btn-lg"> Button </button>
-                        <button class="btn btn-xl"> Button </button>
+                    <div class="code-block-style">
+                        <iframe
+                            src="https://carbon.now.sh/embed/3ft7RxR2Ax4l7rCwB6se"
+                            style="border:0; transform: scale(1); overflow:hidden;"
+                            sandbox="allow-scripts allow-same-origin">
+                        </iframe>
                     </div>
 
                     <h3 class="sub-heading-style">Button Variant</h3>
+                    <p>Choose the most suitable button of your need from the list of variants available.</p>
                     <div class="row">
                         <button class="btn btn-primary">Primary</button>
-                        <button class="btn button-secondary">Secondary</button>
-                        <button class="btn btn-disabled">Disabled</button>
-                        <button class="btn btn-fb">Facebook</button>
-                        <button class="btn btn-icon-twitter">Twitter</button>
+                        <button class="btn btn-secondary">Secondary</button>
+                        <button class="btn btn-noborder">Borderless Button</button>
+                        <button class="btn btn-link">Link Button</button>
                     </div>
                     <div class="code-block-style">
+                        <iframe
+                            src="https://carbon.now.sh/embed/TTXGKdlp4bjs5emn1wjW"
+                            style="border:0; transform: scale(1); overflow:hidden;"
+                            sandbox="allow-scripts allow-same-origin">
+                        </iframe>
                     </div>
+
+                    <h3 class="sub-heading-style">Social Buttons</h3>
+                    <p>Buttons for social apps can be also used with icons.</p>
+                    <div class="row">
+                        <button class="btn btn-fb"><span><img src="./images/symbols/fb.svg" alt=""></span> Facebook</button>
+                        <button class="btn btn-twitter"><span><img src="./images/symbols/twitter.svg" alt=""></span> Twitter</button>
+                    </div>
+                    <div class="code-block-style">
+                        <iframe
+                            src="https://carbon.now.sh/embed/6y1no7eKJq9wVfs4Fp58"
+                            style="border:0; transform: scale(1); overflow:hidden;"
+                            sandbox="allow-scripts allow-same-origin">
+                        </iframe>
+                    </div>
+
+                    <!-- card component -->
+
+                    <h1 id="card" class="offset-issue">Card</h1>
+                    <p>Cards contain content and actions about a single subject.
+                    </p>
+
+                    <h2 class="sub-heading-style">Usage</h2>
+                    <div class="row">
+                        <div class="card-component">
+                            <img src="./images/img-placeholder.jpg" alt="product" />
+                            <div>
+                                <strong class="card-component-title">Card Title</strong>
+                                <p>
+                                Some quick example text to build on the card title and make up the bulk of the card's content.
+                                </p>
+                                <button class="btn btn-nrml">Go somewhere</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="code-block-style">
+                        <iframe
+                            src="https://carbon.now.sh/embed/1U9BtRUn0q2XEduIZlmH"
+                            style="border:0; transform: scale(1); overflow:hidden;"
+                            sandbox="allow-scripts allow-same-origin">
+                        </iframe>
+                    </div>
+                    <h3 class="sub-heading-style">Complex cards/Cards with badges</h3>
+                    <p></p>
+                    <div class="row">
+                        <div class="card-component1">
+                            <img src="./images/cart-img1.png" alt="">
+                            <div class="card-component-top">
+                                <h3>Girl's Black Top</h3>
+                                <img src="./images/symbols/like.svg" alt="" class="like-icon">
+                            </div>
+                            <button class="btn btn-primary">Add to cart</button>
+                        </div>
+
+                        <div class="card-component2">
+                            <img src="./images/cart-img2.jpg" alt="">
+                            <div class="card-component-top">
+                                <p>30% OFF</p>
+                                <img src="./images/symbols/like.svg" alt="" class="like-icon">
+                            </div>
+                            <div class="card-component2-details">
+                                <h3>Red Top</h3>
+                                <h5>Kalakari inc.</h5>
+                                <small>Rs. 1399 <span><s>1999</s></span></small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="code-block-style">
+                        <iframe
+                            src="https://carbon.now.sh/embed/7BHcknEiqeRmRRhdFijb"
+                            style="border:0; transform: scale(1); overflow:hidden;"
+                            sandbox="allow-scripts allow-same-origin">
+                        </iframe>
+                    </div>
+
+                    <!-- Image component -->
+
+                    <h1 id="image" class="offset-issue">Image</h1>
+                    <p>The Image component is used to display images.
+                    </p>
+
+                    <h2 class="sub-heading-style">Usage</h2>
+                    <div class="row">
+                        <div class="img-box">
+                            <img src="./images/avatars/marvel/stan-lee.png" alt="">
+                        </div>
+                    </div>
+                    <div class="code-block-style">
+                        <iframe
+                            src="https://carbon.now.sh/embed/KD8q5QisZRlw969Zs0al"
+                            style="border:0; transform: scale(1); overflow:hidden;"
+                            sandbox="allow-scripts allow-same-origin">
+                        </iframe>
+                    </div>
+
+                    <h3 class="sub-heading-style">Size and Variant </h3>
+                    <p>Different variant and sizes of images can be used based on the requirement.</p>
+                    <div class="row">
+                        <img class="circular-img" src="./images/avatars/marvel/Tony-suqare.png" alt="Tony Stark">
+                        <img class="sm-squircle-img" src="./images/avatars/marvel/fury.jpg" alt="Fury">
+                        <img class="md-img" src="./images/avatars/marvel/hulk.jpg" alt="Hulk">
+                        <img class="lg-img" src="./images/avatars/marvel/Thor.jpg" alt="Thor">
+                    </div>
+                    <div class="code-block-style">
+                        <iframe
+                            src="https://carbon.now.sh/embed/japqjpOonwdpO8YfDemS"
+                            style="border:0; transform: scale(1); overflow:hidden;"
+                            sandbox="allow-scripts allow-same-origin">
+                        </iframe>
+                    </div>
+
+                    <!-- Input component -->
+
+                    <h1 id="input" class="offset-issue">Input</h1>
+                    <p>The Input component is a component that is used to get user input in a text field.
+                    </p>
+
+                    <h2 class="sub-heading-style">Usage</h2>
+                    <div class="row">
+                        <div class="col">
+                            <label for="userName">
+                                Name
+                            </label>
+                            <input type="text" name="userName" id="userName">
+                            <label for="userEmail">
+                                Email
+                            </label>
+                            <input type="email" name="userEmail" id="userEmail">
+                            <label for="userpwd">
+                                Password
+                            </label>
+                            <input type="password" name="userpwd" id="userpwd">
+                        </div>
+                    </div>
+                    <div class="code-block-style">
+                        <iframe
+                            src="https://carbon.now.sh/embed/bJr8fnjHIqs7xegMogQ6"
+                            style="border:0; transform: scale(1); overflow:hidden;"
+                            sandbox="allow-scripts allow-same-origin">
+                        </iframe>
+                    </div>
+
+                    <!-- List component -->
+
+                    <h1 id="list" class="offset-issue">List</h1>
+                    <p>Lists are continuous, vertical indexes of text or images.
+                    </p>
+
+                    <h2 class="sub-heading-style">Usage</h2>
+                    <h3 class="sub-heading-style">Simple List</h3>
+                    <div class="row">
+                        <ul class="col">
+                            <li>Lorem ipsum dolor sit amet</li>
+                            <li>Consectetur adipiscing elit</li>
+                            <li>Integer molestie lorem at massa</li>
+                            <li>Facilisis in pretium nisl aliquet</li>
+                        </ul>
+                    </div>
+                    <div class="code-block-style">
+                        <iframe
+                            src="https://carbon.now.sh/embed/uLP93BbhQjp0ShEvW1RB"
+                            style="border:0; transform: scale(1); overflow:hidden;"
+                            sandbox="allow-scripts allow-same-origin">
+                        </iframe>
+                    </div>
+
+                    <h3 class="sub-heading-style">Stacked List</h3>
+                        <div class="row">
+                            <ul class="col">
+                                <li class="list-items border">
+                                    <img class="circular-avatar" src="./images/avatars/batman.png" alt="">
+                                    <p>I'll be standing where I belong. Between you and the people of NeoG.</p>
+                                </li>
+                                <li class="list-items border">
+                                    <img class="circular-avatar" src="./images/avatars/marvel/Tony-suqare.png" alt="">
+                                    <p>Sometimes you gotta run before you walk.</p>
+                                </li>
+                                <li class="list-items border">
+                                    <img class="circular-avatar" src="./images/avatars/marvel/captain-square.jpg" alt="">
+                                    <p>Avengers Assemble!</p>
+                                </li>
+                            </ul>
+                        </div>
+                    <div class="code-block-style">
+                        <iframe
+                            src="https://carbon.now.sh/embed/MHQX1IjmrRENSoPFBzZc"
+                            style="border:0; transform: scale(1); overflow:hidden;"
+                            sandbox="allow-scripts allow-same-origin">
+                        </iframe>
+                    </div>
+
+                    <!-- Navigation component -->
+
+                    <h1 id="nav" class="offset-issue">Navigation</h1>
+                    <p>A navigation bar is a user interface element within a webpage that contains links to other sections of the website. 
+                    </p>
+
+                    <h2 class="sub-heading-style">Usage</h2>
+                    <h3 class="sub-heading-style">Desktop Nav</h3>
+                    <div class="row">
+                        <nav>
+                            <ul class="border nav-style nav1">
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">Profile</a></li>
+                                <li><a href="#">Blogs</a></li>
+                                <li><a href="#">Contact</a></li>
+                            </ul>
+                        </nav>
+                        <nav>
+                            <ul class="border nav-style nav2">
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">Profile</a></li>
+                                <li><a href="#">Blogs</a></li>
+                                <li><a href="#">Contact</a></li>
+                            </ul>
+                        </nav>
+                        <nav>
+                            <ul class="border nav-style nav3">
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">Profile</a></li>
+                                <li><a href="#">Blogs</a></li>
+                                <li><a href="#">Contact</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="code-block-style">
+                        <iframe
+                            src="https://carbon.now.sh/embed/9EANnFMhDROmaFOC7QkI"
+                            style="border:0; transform: scale(1); overflow:hidden;"
+                            sandbox="allow-scripts allow-same-origin">
+                        </iframe>
+                    </div>
+
+                    <!-- Modal component -->
+<!-- yet to be added
+                    <h1 id="modal" class="offset-issue">Modal</h1>
+                    <p>A dialog is a window overlaid on either the primary window or another dialog window. Content behind a modal dialog is inert, meaning that users cannot interact with it.
+                    </p>
+
+                    <h2 class="sub-heading-style">Usage</h2>
+                    <div class="row">
+                    </div>
+                    <div class="code-block-style">
+                    </div> -->
+
+                    <!-- Rating component -->
+<!-- yet to be added
+                    <h1 id="rating" class="offset-issue">Rating</h1>
+                    <p>Ratings provide insight regarding others’ opinions and experiences with a product. Users can also rate products they’ve purchased.
+                    </p>
+
+                    <h2 class="sub-heading-style">Usage</h2>
+                    <div class="row">
+                    </div>
+                    <div class="code-block-style">
+                    </div> -->
+
+                    <!-- Typography component -->
+
+                    <h1 id="typography" class="offset-issue">Typography</h1>
+                    <p>Use typography to present your design and content as clearly and efficiently as possible.
+                    </p>
+
+                    <h2 class="sub-heading-style">Usage</h2>
+                    <div class="border">
+                        <h1>h1. Heading</h1>
+                        <h2>h2. Heading</h2>
+                        <h3>h3. Heading</h3>
+                        <h4>h4. Heading</h4>
+                        <h5>h5. Heading</h5>
+                    </div>
+                    <div class="code-block-style">
+                        <iframe
+                            src="https://carbon.now.sh/embed/EfvCYuHxjLONIgEp73HV"
+                            style="border:0; transform: scale(1); overflow:hidden;"
+                            sandbox="allow-scripts allow-same-origin">
+                        </iframe>
+                    </div>
+
+                    <h3 class="sub-heading-style">Small text</h3>
+                    <p class="border"><small>This is a small text.</small></p>
+                    <h3 class="sub-heading-style">Gray text</h3>
+                    <p class="border gray-text">This is a gray text.</p>
+                    <h3 class="sub-heading-style">Center text</h3>
+                    <p class="border center-text">This is a centered text.</p>
+                    <div class="code-block-style">
+                        <iframe
+                            src="https://carbon.now.sh/embed/QOJznTpGonVCVaXwxM0G"
+                            style="border:0; transform: scale(1); overflow:hidden;"
+                            sandbox="allow-scripts allow-same-origin">
+                        </iframe>
+                    </div>
+          
+                    <!-- Toast component -->
+<!-- yet to be added
+                    <h1 id="toast" class="offset-issue">Toast</h1>
+                    <p>The toast is used to show alerts on top of an overlay. The toast will close itself when the close button is clicked, or after a timeout — the default is 5 seconds. The toast component is used to give feedback to users after an action has taken place.
+                    </p>
+
+                    <h2 class="sub-heading-style">Usage</h2>
+                    <div class="row">
+                    </div>
+                    <div class="code-block-style">
+                    </div> -->
 
                 </div>
                 <div class="footer">
@@ -215,6 +539,9 @@
 
                     </footer>
                 </div>
+                <section class="page-up">
+                    <a class="float-btn" href="#page-top">&#8593</a>
+                </section>
             </div>
 
 
