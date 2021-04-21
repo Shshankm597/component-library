@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;700&display=swap');
 
 :root {
-    --kalari-colors-primary: #F56565;
-    --kalari-colors-accent: #00B06E;
+    --kalakari-colors-primary: #F56565;
+    --kalakari-colors-accent: #00B06E;
     --kalakari-colors-txt: #2D3748;
     --kalakari-colors-active-txt: #C53030;
     --kalakari-colors-white: #FFFFFF;
@@ -52,12 +52,12 @@
 
 * {
     box-sizing: border-box;
-    color: var(--kalakari-colors-txt);
 }
 
-* > a {
+* > a, button {
     cursor: pointer;
 }
+
 
 body, html {
     height: 100vh;
@@ -68,6 +68,7 @@ body {
     padding: 0;
     font-family: "Inter",sans-serif;
     user-select: none;
+    color: var(--kalakari-colors-txt);
 }
 
 header {
@@ -82,7 +83,7 @@ header {
     z-index: 3;
     border-top-width: 6px;
     border-top-style: solid;
-    border-top-color: var(--kalari-colors-primary); /* previously used #7B060D */
+    border-top-color: var(--kalakari-colors-primary); /* previously used #7B060D */
     background: var(--kalakari-colors-white);
     padding: 0 1.5rem;
     display: flex; /* to align items inside header */
@@ -359,40 +360,57 @@ iframe {
     color: var(--kalakari-colors-white);
     border-radius: 0.4rem;
     border: none;
-    padding: 0.7rem 1.2rem;
-    font-size: 1rem;
+    padding: .9em 1.5em;
+    font-size: var(--font-size-md);
+    width: fit-content;
+    text-align: center;
+    background-color: var(--kalakari-colors-primary);
+    box-shadow: 0px 6px #999;
+    border-radius: .9rem;
 }
 
-.btn-nrml {
-    background-color: var(--kalari-colors-primary);
-}
+.btn:active {
+    box-shadow: 0 5px #666;
+    transform: translateY(3px);
+  }
 
 .btn-primary {
-    background-color: var(--kalari-colors-primary);
+    background-color: var(--kalakari-colors-primary);
+}
+
+.btn-primary:hover {
+    background-color: var(--kalakari-colors-red-500)
 }
 
 .btn-secondary {
-    border: 1px var(--kalari-colors-primary) solid;
+    border: 1px var(--kalakari-colors-primary) solid;
     background-color: inherit;
-    color: var(--kalari-colors-primary);
+    color: var(--kalakari-colors-primary);
+}
+
+.btn-secondary:hover {
+    border: 1px var(--kalakari-colors-active-txt) solid;
+    color: var(--kalakari-colors-active-txt);
 }
 
 .btn-noborder {
-    color: var(--kalari-colors-primary);
+    color: var(--kalakari-colors-primary);
     background-color: var(--kalakari-colors-white);
 }
 
 .btn-noborder:hover {
     background-color: var(--kalakari-colors-red-100);
+    color: var(--kalakari-colors-active-txt);
 }
 
 .btn-link {
     background-color: var(--kalakari-colors-white);
-    color: var(--kalari-colors-primary);
+    color: var(--kalakari-colors-primary);
 }
 
 .btn-link:hover {
     text-decoration: underline;
+    color: var(--kalakari-colors-active-txt);
 }
 
 .btn-fb {
@@ -429,6 +447,7 @@ iframe {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 .card-component div {
@@ -451,6 +470,7 @@ iframe {
     flex-direction: column;
     border-radius: 1rem;
     position: relative;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 .card-component1 img {
@@ -494,6 +514,7 @@ iframe {
     flex-direction: column;
     border-radius: 1rem;
     position: relative;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 .card-component2 img {
@@ -505,7 +526,7 @@ iframe {
 }
 
 .card-component-top > p {
-    background-color: var(--kalari-colors-primary);
+    background-color: var(--kalakari-colors-primary);
     width: fit-content;
     padding: 0 0.5rem;
     border-top-right-radius: 1rem;
@@ -583,7 +604,7 @@ iframe {
 }
 
 .col > li {
-    margin-inline-start: 1.5rem;
+    margin-inline-start: 1rem;
 }
 
 .list-items {
@@ -665,7 +686,7 @@ iframe {
     width: var(--length-3);
     font-size: var(--length-2);
     border-radius: 50%;
-    background-color: var(--kalari-colors-accent);
+    background-color: var(--kalakari-colors-accent);
     color: var(--kalakari-colors-white);
     position: fixed;
     z-index: 3;
