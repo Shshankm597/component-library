@@ -360,17 +360,17 @@ iframe {
     color: var(--kalakari-colors-white);
     border-radius: 0.4rem;
     border: none;
-    padding: .9em 1.5em;
+    padding: 0.4em 0.7em;
     font-size: var(--font-size-md);
     width: fit-content;
     text-align: center;
     background-color: var(--kalakari-colors-primary);
-    box-shadow: 0px 6px #999;
-    border-radius: .9rem;
+    box-shadow: 0px 4px #999;
+    border-radius: .7rem;
 }
 
 .btn:active {
-    box-shadow: 0 5px #666;
+    box-shadow: 0 3px #666;
     transform: translateY(3px);
   }
 
