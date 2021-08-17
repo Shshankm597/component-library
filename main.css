@@ -23,7 +23,6 @@
     --kalakari-colors-red-500: #E53E3E;
     --kalakari-colors-red-800: #822727;
     --kalakari-colors-blue-100: #BEE3F8;
-    /* --kalakari-colors-primary: linear-gradient(15deg, rgba(123,6,13,1) 0%, rgba(236,28,36,1) 100%); */
     --font-size-xs: 0.62rem;
     --font-size-sm: 0.87rem;
     --font-size-md: 1rem;
@@ -75,15 +74,12 @@ header {
     position: fixed;
     right: 0;
     left: 0;
-    /* position: -webkit-sticky;
-    position: sticky; */
     top: 0;
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-    /* transition: box-shadow 0.2s ease 0s; */
     z-index: 3;
     border-top-width: 6px;
     border-top-style: solid;
-    border-top-color: var(--kalakari-colors-primary); /* previously used #7B060D */
+    border-top-color: var(--kalakari-colors-primary);
     background: var(--kalakari-colors-white);
     padding: 0 1.5rem;
     display: flex; /* to align items inside header */
@@ -145,7 +141,6 @@ header a img {
 }
 
 #menu {
-    /* background-color: yellow; */
     height: calc(100vh - 190px);
     width: 100%;
     overflow-y: auto;
@@ -166,7 +161,6 @@ header a img {
     color: inherit;
     width: 100%;
     padding: 6px 12px;
-    /* z-index: 1; */
 }
 
 #menu .menu-list:focus {
