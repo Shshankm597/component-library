@@ -351,60 +351,51 @@ iframe {
 }
 
 .btn {
-    color: var(--kalakari-colors-white);
-    border-radius: 0.4rem;
+    font-size: 0.8rem;
+    font-weight: 700;
+    outline: none;
     border: none;
-    padding: 0.4em 0.7em;
-    font-size: var(--font-size-md);
-    width: fit-content;
-    text-align: center;
-    background-color: var(--kalakari-colors-primary);
-    box-shadow: 0px 4px #999;
-    border-radius: .7rem;
+    background-color: #1d1d1d;
+    color: aliceblue;
+    padding: 13px 13px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: 0.3s ease;
 }
 
-.btn:active {
-    box-shadow: 0 3px #666;
-    transform: translateY(3px);
+.btn:hover {
+    background-color: #3a3833;
   }
 
-.btn-primary {
-    background-color: var(--kalakari-colors-primary);
-}
-
-.btn-primary:hover {
-    background-color: var(--kalakari-colors-red-500)
-}
-
 .btn-secondary {
-    border: 1px var(--kalakari-colors-primary) solid;
+    border: 1px #1d1d1d solid;
     background-color: inherit;
-    color: var(--kalakari-colors-primary);
+    color: #1d1d1d;
 }
 
 .btn-secondary:hover {
-    border: 1px var(--kalakari-colors-active-txt) solid;
-    color: var(--kalakari-colors-active-txt);
+    border: 1px var(--kalakari-colors-white) solid;
+    color: aliceblue;
 }
 
 .btn-noborder {
-    color: var(--kalakari-colors-primary);
+    color: #1d1d1d;
     background-color: var(--kalakari-colors-white);
 }
 
 .btn-noborder:hover {
-    background-color: var(--kalakari-colors-red-100);
-    color: var(--kalakari-colors-active-txt);
+    background-color: #3a3833;
+    color: aliceblue;
 }
 
 .btn-link {
     background-color: var(--kalakari-colors-white);
-    color: var(--kalakari-colors-primary);
+    color: #1d1d1d;
 }
 
 .btn-link:hover {
     text-decoration: underline;
-    color: var(--kalakari-colors-active-txt);
+    color: aliceblue;
 }
 
 .btn-fb {
